@@ -1140,30 +1140,5 @@
         }
     </script>
 
-    <!-- Optional: GDPR Compliance Notice -->
-    <div id="cookie-notice" style="display: none; position: fixed; bottom: 0; left: 0; right: 0; background: var(--tokyo-bg-secondary); padding: 1rem; border-top: 1px solid var(--tokyo-border); z-index: 1000;">
-        <p style="margin: 0; font-size: 0.875rem; color: var(--tokyo-fg);">
-            This website uses cookies to enhance your experience. 
-            <button onclick="acceptCookies()" style="background: var(--tokyo-purple); color: white; border: none; padding: 0.5rem 1rem; border-radius: 4px; margin-left: 0.5rem; cursor: pointer;">Accept</button>
-        </p>
-    </div>
-
-    <script>
-        // GDPR compliance
-        function checkCookieConsent() {
-            if (!localStorage.getItem('cookie-consent')) {
-                document.getElementById('cookie-notice').style.display = 'block';
-            }
-        }
-
-        function acceptCookies() {
-            localStorage.setItem('cookie-consent', 'true');
-            localStorage.setItem('analytics-consent', 'true');
-            document.getElementById('cookie-notice').style.display = 'none';
-        }
-
-        // Check consent on page load
-        checkCookieConsent();
-    </script>
 </body>
 </html>
